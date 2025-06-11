@@ -1,0 +1,23 @@
+.quantity-selector {
+    margin-bottom: 1rem;
+    gap: 3rem;
+  
+    .counter {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+  
+      button {
+        padding: 0.3rem 0.8rem;
+        background-color: #f3f3f3;
+        border: 1px solid #ccc;
+        cursor: pointer;
+      }
+  
+      span {
+        min-width: 24px;
+        text-align: center;
+      }
+    }
+  }
+  

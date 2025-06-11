@@ -1,0 +1,27 @@
+import React from "react";
+import "./Home.scss";
+import ProductGrid from "../pieces/ProductGrid";
+import bannerImage from "../assets/images/banner-shoes.png";
+// import Header from "../components/Header";
+
+const Home = () => {
+  return (
+    <>
+    {/* <Header/> */}
+    <div className="container">
+      <div className="banner">
+        <div className="banner-content">
+          <h1>New arrivals are here</h1>
+          <p>Get the best deals on our newest collection of shoes for all styles.</p>
+          <a href="#" className="btn">Shop Now</a>
+        </div>
+        <img src={bannerImage} alt="Shoes Banner" />
+      </div>
+
+      <ProductGrid />
+    </div>
+    </>
+  );
+};
+
+export default Home;

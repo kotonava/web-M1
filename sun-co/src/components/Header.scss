@@ -1,0 +1,31 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #e5e7eb;
+    background-color: white;
+  }
+  
+  .logo {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .cart-button {
+    border: 1px solid #d1d5db;
+    padding: 1rem 3rem;
+    border-radius: 8px;
+    font-weight: 500;
+    background-color: white;
+    font-size: 1em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .cart-button:hover {
+    background-color: #f3f4f6;
+  }
+  
