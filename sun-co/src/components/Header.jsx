@@ -22,7 +22,7 @@
 // src/components/Header.jsx
 import React, { useContext, useState } from "react";
 import "./Header.scss";
-import logo from "../assets/images/logo.png";
+import logo from "../assets/images/logostar.jpg";
 import { CartContext } from "./CartContext";
 import CartModal from "./CartModal";
 
@@ -34,7 +34,7 @@ const Header = () => {
     <header className="header">
       <div className="logo">
         <img src={logo} alt="Logo" width="40" />
-        <span>SUN CO</span>
+        <span>SOA NY FIARAHANTSIKA</span>
       </div>
 
       <button className="cart-button" onClick={() => setShowModal(true)}>

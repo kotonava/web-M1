@@ -11,11 +11,11 @@ const Home = () => {
     <div className="container">
       <div className="banner">
         <div className="banner-content">
-          <h1>New arrivals are here</h1>
-          <p>Get the best deals on our newest collection of shoes for all styles.</p>
+          <h1>New arrivals are here</h1> <br /> 
+           <p>Get the best deals on our newest collection of shoes for all styles.</p> <br />
           <a href="#" className="btn">Shop Now</a>
         </div>
-        <img src={bannerImage} alt="Shoes Banner" />
+        {/* <img src={bannerImage} alt="Shoes Banner" /> */}
       </div>
 
       <ProductGrid />
