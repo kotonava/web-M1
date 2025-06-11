@@ -162,7 +162,7 @@ function AddProduct() {
                 <tr key={i}>
                   <td>{prod.brand}</td>
                   <td>{prod.name}</td>
-                  <td>{parseFloat(prod.price).toFixed(2)} €</td>
+                  <td>{parseFloat(prod.price).toFixed(2)} Ar</td>
                                 <td>
                 {prod.image ? (
                     <img
