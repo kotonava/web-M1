@@ -193,6 +193,7 @@ function AddProduct() {
           </table>
         )}
       </div>
+      
     </div>
   );
 }
