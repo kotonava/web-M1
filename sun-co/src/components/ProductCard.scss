@@ -35,4 +35,12 @@
     font-weight: 600;
     color: #111827;
   }
+
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+  }
+  
   

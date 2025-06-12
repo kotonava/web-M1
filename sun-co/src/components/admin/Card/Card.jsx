@@ -14,5 +14,4 @@ const Card = ({ title, value }) => {
     </div>
   );
 };
-//fory
 export default Card;

@@ -3,7 +3,6 @@ const router = express.Router();
 const multer = require("multer");
 const Product = require("../models/Product");
 
-// Config multer pour stocker l'image dans /uploads et garder le nom original
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
     cb(null, "uploads/");
@@ -14,7 +13,6 @@ const storage = multer.diskStorage({
 });
 const upload = multer({ storage });
 
-// GET tous les produits
 router.get("/", async (req, res) => {
   try {
     const products = await Product.find();
@@ -24,7 +22,6 @@ router.get("/", async (req, res) => {
   }
 });
 
-// POST créer un produit avec image
 router.post("/", upload.single("image"), async (req, res) => {
   const { brand, name, price } = req.body;
   const imageUrl = req.file ? `/uploads/${req.file.filename}` : null;
@@ -38,7 +35,6 @@ router.post("/", upload.single("image"), async (req, res) => {
   }
 });
 
-// DELETE produit par ID
 router.delete("/:id", async (req, res) => {
   try {
     await Product.findByIdAndDelete(req.params.id);
@@ -48,7 +44,6 @@ router.delete("/:id", async (req, res) => {
   }
 });
 
-// PUT modifier produit par ID (optionnel)
 router.put("/:id", upload.single("image"), async (req, res) => {
   try {
     const { brand, name, price } = req.body;

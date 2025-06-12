@@ -4,13 +4,12 @@ import Header from "./components/Header";
 import Home from "./views/Home";
 import Product from "./views/Product";
 import AddProduct from "./views/AddProduct";
-import { CartProvider } from "./components/CartContext"; // ✅ import du contexte
+import { CartProvider } from "./components/CartContext";
 
 const App = () => {
   return (
     <CartProvider>
       {" "}
-      {/* ✅ Fournit le contexte à toute l'application */}
       <Router>
         <Header />
         <Routes>

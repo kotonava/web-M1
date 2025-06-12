@@ -1,16 +1,10 @@
-// .product-grid {
-//     display: grid;
-//     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-//     gap: 1.5rem;
-//     margin-top: 2rem;
-//   }
-  
 .product-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 1.5rem;
   margin-top: 2rem;
 }
+
 
 .pagination {
   display: flex;

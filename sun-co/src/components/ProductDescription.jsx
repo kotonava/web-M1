@@ -1,4 +1,3 @@
-// src/components/ProductDescription.jsx
 import React from "react";
 import "../styles/product-description.scss";
 
